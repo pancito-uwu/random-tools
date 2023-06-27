@@ -1,6 +1,6 @@
 f = open("unifont.hex", "r")
 # change "unifont.hex" to your unihex font's filename
-src = f.read().split("\n")
+src = f.readlines()
 f.close()
 def render()
   line = src[int(input("line number:"))]
